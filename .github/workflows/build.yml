@@ -28,6 +28,7 @@ jobs:
       - name: Build containers
         run: |
             cd $GITHUB_WORKSPACE
+            sudo apt-get update
             sudo apt-get install -y qemu-user-static binfmt-support
             chmod +x build.sh
             ./build.sh ${{ matrix.version }}
