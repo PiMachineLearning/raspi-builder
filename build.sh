@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-docker built -t pimachinelearning/raspi-builder .
+docker build -t pimachinelearning/raspi-builder .
 
 docker tag pimachinelearning/raspi-builder:latest pimachinelearning/raspi-builder:latest
 
